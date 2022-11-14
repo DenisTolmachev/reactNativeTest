@@ -1,7 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, ImageBackground } from "react-native";
 
-export default function App() {
+const App = () => {
   return (
     <View style={styles.container}>
       <ImageBackground
@@ -19,13 +19,11 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // backgroundColor: "#fff",
-    // alignItems: "center",
-    // justifyContent: "center",
   },
   imageBg: {
     flex: 1,
     resizeMode: "cover",
+    alignItems: "center",
     justifyContent: "center",
   },
   title: {
@@ -37,3 +35,6 @@ const styles = StyleSheet.create({
     color: "white",
   },
 });
+
+
+export default App;
