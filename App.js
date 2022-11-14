@@ -1,5 +1,6 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, ImageBackground } from "react-native";
+import { StyleSheet, View, ImageBackground } from "react-native";
+import RegistrationScreen from "./screens/auth/RegistrationScreen";
 
 const App = () => {
   return (
@@ -8,13 +9,12 @@ const App = () => {
         style={styles.imageBg}
         source={require("./assets/img/bg-img.jpg")}
       >
-        <Text style={styles.title}>Hello World!!!</Text>
-        <Text style={styles.text}>My First React Native Project!!!</Text>
-        <StatusBar style="auto" />
+        <RegistrationScreen />
       </ImageBackground>
+      <StatusBar style="auto" />
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -26,15 +26,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  title: {
-    fontSize: 38,
-    color: "white",
-  },
-  text: {
-    fontSize: 28,
-    color: "white",
-  },
 });
-
 
 export default App;
